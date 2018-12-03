@@ -1,11 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './frontend/clock'
+import Tabs from './frontend/tabs'
+
+const TAB_PANES = {}
 
 function Root() {
   return(
     <div>
-      <Clock />
+      <div>
+        <Clock />
+      </div>
+      <div>
+        <Tabs />
+      </div>
     </div>
   );
 }
