@@ -30,9 +30,9 @@ export default class Clock extends React.Component {
   }
 
   formatTime(date) {
-    const hours = date.getHours() % 12;
-    const minutes = ("0" + date.getMinutes()).slice(-2);
-    const seconds = ("0" + date.getSeconds()).slice(-2);
+    let hours = date.getHours() % 12;
+    let minutes = ("0" + date.getMinutes()).slice(-2);
+    let seconds = ("0" + date.getSeconds()).slice(-2);
     return `${hours}:${minutes}:${seconds}`;
   } 
 }
