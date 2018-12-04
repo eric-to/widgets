@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Clock from './frontend/clock'
 import Tabs from './frontend/tabs'
+import Weather from './frontend/weather'
 
 const TAB_PANES = [
   {title: 'Julian', content: 'Lorem Ipsum -- pfft, overrated. My name is Julian and my dog is a good boy.'},
@@ -23,6 +24,9 @@ function Root() {
       </div>
       <div>
         <Tabs panes={TAB_PANES}/>
+      </div>
+      <div>
+        <Weather />
       </div>
     </div>
   );
